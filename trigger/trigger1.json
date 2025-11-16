@@ -1,0 +1,36 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "DumpingDataFromSQLToADLS",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"TableList": [
+						"customers",
+						"products",
+						"orders",
+						"order_items",
+						"payments",
+						"delivery",
+						"inventory",
+						"reviews"
+					]
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2025-11-16T17:05:00",
+				"timeZone": "Pakistan Standard Time"
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "LSAzureSqlDatabase",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "enterprise-data-pipeline-server.database.windows.net",
+			"database": "Enterprise-Data-Pipeline-DB",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "adminfarhan",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEM1RTQwQjVBLUQ3NTktNDE2MC1BQjFDLTk3RjMzNjAxOTA5Rl80NjJlYzZiYS04N2IyLTRhOWYtYjk1ZC1jNGRlZGI4ZjQ1OTkiDQp9"
+		}
+	}
+}
